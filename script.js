@@ -1,4 +1,4 @@
-function validEmail(str: string): boolean {
+function validEmail(str) {
     // Define the regex pattern for validating email addresses
     const emailPattern = /^[a-zA-Z0-9]+[a-zA-Z0-9.-]*@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
     
