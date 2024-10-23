@@ -1,7 +1,7 @@
-function validEmail(str) {
-  //your JS code here.
+function validEmail(str: string): boolean {
+    // Define the regex pattern for validating email addresses
+    const emailPattern = /^[a-zA-Z0-9]+[a-zA-Z0-9.-]*@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+    
+    // Check if the string matches the email pattern
+    return emailPattern.test(str);
 }
-
-// Do not change the code below.
-const str = prompt("Enter an email address.");
-alert(validEmail(str));
